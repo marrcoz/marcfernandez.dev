@@ -1,3 +1,5 @@
+import { GoogleAnalytics, GoogleTagManager } from '@next/third-parties/google'
+
 import type { Metadata } from 'next'
 
 import Navbar from 'app/components/navbar'
@@ -36,6 +38,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
+      <GoogleTagManager gtmId="G-3SB44FDV5Q" />
       <body className="mx-4 mt-8 max-w-xl antialiased lg:mx-auto">
         <main className="mt-6 flex min-w-0 flex-auto flex-col px-2 md:px-0">
           <Navbar />
