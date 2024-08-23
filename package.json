@@ -1,0 +1,39 @@
+{
+  "name": "personal-site",
+  "version": "1.0.0",
+  "description": "Just my personal site made with Next.js and Tailwindcss",
+  "main": "index.js",
+  "scripts": {
+    "format": "prettier --write .",
+    "build": "next build",
+    "dev": "next dev"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/marrcoz/marcfernandez.dev.git"
+  },
+  "author": "Marc Fernandez <marc.fernandezo@hotmail.com>",
+  "license": "GPL-3.0-or-later",
+  "bugs": {
+    "url": "https://github.com/marrcoz/marcfernandez.dev/issues"
+  },
+  "homepage": "https://github.com/marrcoz/marcfernandez.dev#readme",
+  "dependencies": {
+    "next": "^14.2.6",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "react-icons": "^5.3.0"
+  },
+  "devDependencies": {
+    "@types/node": "22.5.0",
+    "@types/react": "18.3.4",
+    "autoprefixer": "^10.4.20",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-plugin-prettier": "^5.2.1",
+    "postcss": "^8.4.41",
+    "prettier": "^3.3.3",
+    "prettier-plugin-tailwindcss": "^0.6.6",
+    "tailwindcss": "^3.4.10",
+    "typescript": "^5.5.4"
+  }
+}
