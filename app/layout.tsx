@@ -1,5 +1,4 @@
 import { GoogleAnalytics, GoogleTagManager } from '@next/third-parties/google'
-
 import type { Metadata } from 'next'
 
 import Navbar from 'app/components/navbar'
@@ -9,14 +8,19 @@ import { baseURL } from 'app/types'
 import 'app/globals.css'
 
 export const metadata: Metadata = {
-  title: 'Marc Fernández - Fullstack developer',
-  description: 'Portfolio | IT Technician & Software developer',
+  title: 'Marc Fernandez - Fullstack web developer',
+  description:
+    'IT Technician and Fullstack web developer - JavaScript, Node.js, React',
+  icons: {
+    icon: '/favicon.ico',
+  },
 
   openGraph: {
-    title: 'Marc Fernández - Fullstack developer',
-    description: 'Portfolio | IT Technician & Software developer',
+    title: 'Marc Fernandez - Fullstack web developer',
+    description:
+      'IT Technician and Fullstack web developer - JavaScript, Node.js, React',
     url: baseURL,
-    siteName: 'Marc Fernández - Fullstack developer',
+    siteName: 'Marc Fernandez - Fullstack web developer',
     locale: 'en',
     type: 'website',
   },
@@ -31,18 +35,16 @@ export const metadata: Metadata = {
   },
 }
 
-export default function RootLayout({
-  children,
-}: {
-  children: React.ReactNode
-}) {
+export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en">
+      <head>
       <GoogleTagManager gtmId="G-3SB44FDV5Q" />
-      <body className="mx-4 mt-8 max-w-xl antialiased lg:mx-auto">
+      </head>
+      <body className="mx-4 mt-8 max-w-4xl antialiased lg:mx-auto">
         <main className="mt-6 flex min-w-0 flex-auto flex-col px-2 md:px-0">
           <Navbar />
-          {children}
+            {children}
           <Footer />
         </main>
       </body>
