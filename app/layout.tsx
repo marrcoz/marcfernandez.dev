@@ -1,4 +1,4 @@
-import { GoogleAnalytics, GoogleTagManager } from '@next/third-parties/google'
+import { GoogleAnalytics } from '@next/third-parties/google'
 import type { Metadata } from 'next'
 
 import Navbar from 'app/components/navbar'
@@ -38,9 +38,7 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en">
-      <head>
-      <GoogleTagManager gtmId="G-3SB44FDV5Q" />
-      </head>
+      <GoogleAnalytics gaId='G-3SB44FDV5Q' />
       <body className="mx-4 mt-8 max-w-4xl antialiased lg:mx-auto">
         <main className="mt-6 flex min-w-0 flex-auto flex-col px-2 md:px-0">
           <Navbar />
