@@ -1,5 +1,5 @@
-import { SiTypescript } from 'react-icons/si'
 import { FaPython } from 'react-icons/fa'
+import { FaReact } from "react-icons/fa";
 
 import Card from 'app/components/projects/card'
 
@@ -12,6 +12,14 @@ export default function Projects() {
       repository: 'https://github.com/marrcoz/remotedesktop',
       badge: <FaPython className="size-5" color='4584b6' />,
       topics: ['Python', 'Shell', 'Linux', 'Ubuntu'],
+    },
+    {
+      title: 'marrcoz/next-icons',
+      description: 'An Icon components library for React',
+      link: 'https://github.com/marrcoz/next-icons',
+      repository: 'https://github.com/marrcoz/next-icons',
+      badge: <FaReact className="size-5" color='61dbfb' />,
+      topics: ['Library', 'Components', 'React', 'Typescript'],
     },
   ]
 
