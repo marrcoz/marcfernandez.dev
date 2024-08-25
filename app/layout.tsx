@@ -11,9 +11,6 @@ export const metadata: Metadata = {
   title: 'Marc Fernandez - Fullstack web developer',
   description:
     'IT Technician and Fullstack web developer - JavaScript, Node.js, React',
-  icons: {
-    icon: '/favicon.ico',
-  },
 
   openGraph: {
     title: 'Marc Fernandez - Fullstack web developer',
