@@ -8,7 +8,7 @@ export default function Experience() {
         <li className="ms-4">
           <div className="absolute -start-1.5 mt-1.5 h-3 w-3 rounded-full border border-white bg-gray-200 dark:border-gray-900 dark:bg-gray-700"></div>
           <time className="mb-1 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">
-            2024 &mdash; Present
+            Jan. 2024 &mdash; Sep. 2024
           </time>
           <h3 className="text-lg font-semibold text-gray-900">IT Technician</h3>
           <a
